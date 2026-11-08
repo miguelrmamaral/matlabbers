@@ -10,8 +10,8 @@ a0=2*T1/T; % Segregate a0, which often has a different expression
 
 figure; hold on;
 
-for N = 10000
+for N = 1
     % Order of the Fourier expansion
-    xN=exp(1i*w0*t*(-N:N))*[ak(-N:-1) a0 ak(1:N)].';
+    xN=exp(1i*w0*(t+0.0025)*(-N:N))*[ak(-N:-1) a0 ak(1:N)].';
     plot(t, real (xN)); grid
 end
