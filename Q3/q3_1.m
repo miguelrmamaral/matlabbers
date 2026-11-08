@@ -2,7 +2,7 @@ samplerate = 16e3;
 
 t=(-320:320)'/samplerate;
 w0=2*pi*80;
-T=2*pi/w0;
+T=2*pi/w0; %aaaaaaaaaaaaaaaaaaaaaaaaaa
 T1=T/6;
 
 ak=@(k) sin(k*w0*T1)./(k*pi).*exp(-1i*k*w0*T1);
