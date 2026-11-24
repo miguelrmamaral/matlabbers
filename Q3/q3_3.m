@@ -14,7 +14,7 @@ ab0=Tb/T;
 
 figure; hold on;
 
-for N = 5
+for N = 10000
     % Order of the Fourier expansion
     xN1=exp(1i*w0*(t-0.4)*(-N:N))*[aak(-N:-1) aa0 aak(1:N)].';
     xN2=exp(1i*w0*(t-0.5)*(-N:N))*[abk(-N:-1) ab0 abk(1:N)].';
